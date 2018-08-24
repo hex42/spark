@@ -243,7 +243,9 @@ private trait DAGScheduler extends Scheduler with Logging {
         myPending ++= tasks
         submitTasks(tasks, runId)
       }
-  
+
+
+      //tip: 这里是提交stage的入口， 会一步一步细化为提交task
       submitStage(finalStage)
   
       while (numFinished != numOutputParts) {
