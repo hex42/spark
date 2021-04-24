@@ -281,7 +281,7 @@ abstract class RDD[T: ClassTag](
    * This should ''not'' be called by users directly, but is available for implementors of custom
    * subclasses of RDD.
    */
-  final def iterator(split: Partition, context: TaskContext): Iterator[T] = {
+  final def iterator(split: Partition, context: TaskContext): Iterator[T] = { //o: critical
     if (storageLevel != StorageLevel.NONE) {
       getOrCompute(split, context)
     } else {
