@@ -38,6 +38,15 @@ import org.apache.spark.rpc._
 import org.apache.spark.serializer.{JavaSerializer, Serializer}
 import org.apache.spark.util.{SparkUncaughtExceptionHandler, ThreadUtils, Utils}
 
+
+/**
+ * todo:critical
+ * @param rpcEnv
+ * @param address
+ * @param webUiPort
+ * @param securityMgr
+ * @param conf
+ */
 private[deploy] class Master(
     override val rpcEnv: RpcEnv,
     address: RpcAddress,

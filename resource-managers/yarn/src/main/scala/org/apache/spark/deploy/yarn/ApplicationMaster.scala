@@ -50,6 +50,7 @@ import org.apache.spark.scheduler.cluster.CoarseGrainedClusterMessages._
 import org.apache.spark.util._
 
 /**
+ * todo:critical
  * Common application master functionality for Spark on Yarn.
  */
 private[spark] class ApplicationMaster(args: ApplicationMasterArguments) extends Logging {

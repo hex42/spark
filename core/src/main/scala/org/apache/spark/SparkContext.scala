@@ -2106,6 +2106,8 @@ class SparkContext(config: SparkConf) extends Logging {
   }
 
   /**
+   *
+   * todo:critical
    * Run a job on all partitions in an RDD and return the results in an array.
    *
    * @param rdd target RDD to run tasks on

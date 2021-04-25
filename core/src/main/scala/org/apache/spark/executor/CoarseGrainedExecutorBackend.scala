@@ -37,6 +37,16 @@ import org.apache.spark.scheduler.cluster.CoarseGrainedClusterMessages._
 import org.apache.spark.serializer.SerializerInstance
 import org.apache.spark.util.{ThreadUtils, Utils}
 
+/**
+ * todo:critical
+ * @param rpcEnv
+ * @param driverUrl
+ * @param executorId
+ * @param hostname
+ * @param cores
+ * @param userClassPath
+ * @param env
+ */
 private[spark] class CoarseGrainedExecutorBackend(
     override val rpcEnv: RpcEnv,
     driverUrl: String,
