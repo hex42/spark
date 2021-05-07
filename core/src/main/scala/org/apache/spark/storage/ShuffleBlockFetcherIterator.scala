@@ -377,7 +377,7 @@ final class ShuffleBlockFetcherIterator(
    *
    * Throws a FetchFailedException if the next block could not be fetched.
    */
-  override def next(): (BlockId, InputStream) = {
+  override def next(): (BlockId, InputStream) = {  // todo:critical shuffle block fetcher
     if (!hasNext) {
       throw new NoSuchElementException
     }

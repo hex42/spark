@@ -30,6 +30,7 @@ import org.apache.spark.{SparkEnv, SparkException}
 import org.apache.spark.internal.Logging
 
 /**
+ * todo:critical
  * A cleaner that renders closures serializable if they can be done so safely.
  */
 private[spark] object ClosureCleaner extends Logging {

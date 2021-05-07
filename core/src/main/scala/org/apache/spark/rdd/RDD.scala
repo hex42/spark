@@ -276,7 +276,7 @@ abstract class RDD[T: ClassTag](
     }
   }
 
-  // todo: critical
+  // todo:critical
   /**
    * Internal method to this RDD; will read from cache if applicable, or otherwise compute it.
    * This should ''not'' be called by users directly, but is available for implementors of custom
@@ -314,6 +314,7 @@ abstract class RDD[T: ClassTag](
     ancestors.filterNot(_ == this).toSeq
   }
 
+  // todo:critical
   /**
    * Compute an RDD partition or read it from a checkpoint if the RDD is checkpointing.
    */
@@ -327,6 +328,7 @@ abstract class RDD[T: ClassTag](
   }
 
   /**
+   * todo:critical
    * Gets or computes an RDD partition. Used by RDD.iterator() when an RDD is cached.
    */
   private[spark] def getOrCompute(partition: Partition, context: TaskContext): Iterator[T] = {
