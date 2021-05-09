@@ -2703,6 +2703,7 @@ object SparkContext extends Logging {
   }
 
   /**
+   * todo:critical
    * Create a task scheduler based on a given master URL.
    * Return a 2-tuple of the scheduler backend and the task scheduler.
    */

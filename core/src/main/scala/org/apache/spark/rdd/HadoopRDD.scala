@@ -43,6 +43,7 @@ import org.apache.spark.storage.StorageLevel
 import org.apache.spark.util.{NextIterator, SerializableConfiguration, ShutdownHookManager}
 
 /**
+ * todo:critical
  * A Spark split class that wraps around a Hadoop InputSplit.
  */
 private[spark] class HadoopPartition(rddId: Int, override val index: Int, s: InputSplit)
